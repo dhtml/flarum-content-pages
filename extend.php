@@ -17,12 +17,20 @@ use Flarum\Extend;
 return [
     (new Extend\Frontend('forum'))
         ->js(__DIR__.'/js/dist/forum.js')
-        ->css(__DIR__.'/less/forum.less'),
+        ->css(__DIR__.'/less/forum.less')
+        ->route('/about-us', 'content-pages.about-us')
+        ->route('/contact-us', 'content-pages.contact-us')
+        ->route('/terms', 'content-pages.terms')
+        ->route('/privacy-policy', 'content-pages.privacy-policy')
+        ->route('/download', 'content-pages.download'),
 
+    /*
     (new Extend\Frontend('admin'))
         ->js(__DIR__.'/js/dist/admin.js')
         ->css(__DIR__.'/less/admin.less'),
+    */
 
+    /*
     new Extend\Locales(__DIR__.'/locale'),
 
     (new Extend\View())
@@ -30,4 +38,5 @@ return [
 
     (new Extend\Routes('forum'))
         ->get('/HelloWorld', 'dhtml-content-pages.helloworld', HelloWorld::class),
+    */
 ];
