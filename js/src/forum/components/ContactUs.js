@@ -19,10 +19,15 @@ export default class ContactUs extends Component {
             </div>
           </header>
           <div class="Pages-container container">
-            <div class="Post-body"><p>Keep In Touch With Africoders, we are happy to talk to you</p>
-              <p>
-                <img src="https://static.africoders.com/forum/contact-us.png"/>
-              </p>
+            <div class="Post-body">
+              <p>We'd love to hear from you! Here are some ways to get in touch:</p>
+              <ul>
+                <li><strong>Email:</strong> <a href="mailto:support@africoders.com">support@africoders.com</a></li>
+                <li><strong>Facebook:</strong> <a href="https://facebook.com/africoders">facebook.com/africoders</a>
+                </li>
+              </ul>
+              <p>If you have any questions, comments, or suggestions, feel free to reach out to us using the methods
+                above. We'll do our best to get back to you as soon as possible.</p>
             </div>
           </div>
         </div>
