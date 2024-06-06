@@ -24,11 +24,11 @@
     "extra": {
         "flarum-extension": {
             "title": "Flarum Content Pages",
-            "category": "",
+            "category": "feature",
             "icon": {
-                "name": "",
-                "color": "",
-                "backgroundColor": ""
+                "name": "far fa-eye",
+                "backgroundColor": "#008000",
+                "color": "#fff"
             }
         },
         "flarum-cli": {
