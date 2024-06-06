@@ -22,7 +22,11 @@ return [
     (new Extend\Frontend('admin'))
         ->js(__DIR__.'/js/dist/admin.js')
         ->css(__DIR__.'/less/admin.less'),
+
     new Extend\Locales(__DIR__.'/locale'),
+
+    (new Extend\View())
+        ->namespace('dhtml-content-pages', __DIR__.'/resources/views'),
 
     (new Extend\Routes('forum'))
         ->get('/HelloWorld', 'dhtml-content-pages.helloworld', HelloWorld::class),
