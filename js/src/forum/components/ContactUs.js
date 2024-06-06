@@ -9,7 +9,7 @@ export default class ContactUs extends Component {
 
   view() {
     return (
-      <div class="Pages Pages--isHtml" data-id="2" data-slug="about-us">
+      <div class="Pages Pages--isHtml" data-id="2" data-slug="contact-us">
         <div class="Pages-page">
           <header class="Hero PageHero">
             <div class="container">
@@ -19,7 +19,7 @@ export default class ContactUs extends Component {
             </div>
           </header>
           <div class="Pages-container container">
-            <div class="Post-body"><p>Keep In Touch With Africoders</p>
+            <div class="Post-body"><p>Keep In Touch With Africoders, we are happy to talk to you</p>
               <p>
                 <img src="https://static.africoders.com/forum/contact-us.png"/>
               </p>
