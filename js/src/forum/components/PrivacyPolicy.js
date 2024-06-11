@@ -9,7 +9,7 @@ export default class PrivacyPolicy extends Component {
 
   view() {
     return (
-      <div class="Pages Pages--isHtml" data-id="3" data-slug="privacy-policy">
+      <div class="ContentPages Pages Pages--isHtml" data-id="3" data-slug="privacy-policy">
         <div class="Pages-page">
           <header class="Hero PageHero">
             <div class="container">

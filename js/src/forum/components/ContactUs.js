@@ -9,7 +9,7 @@ export default class ContactUs extends Component {
 
   view() {
     return (
-      <div class="Pages Pages--isHtml" data-id="2" data-slug="contact-us">
+      <div class="ContentPages Pages Pages--isHtml" data-id="2" data-slug="contact-us">
         <div class="Pages-page">
           <header class="Hero PageHero">
             <div class="container">

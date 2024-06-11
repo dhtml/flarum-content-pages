@@ -9,7 +9,7 @@ export default class Terms extends Component {
 
   view() {
     return (
-      <div class="Pages Pages--isHtml" data-id="3" data-slug="terms">
+      <div class="ContentPages Pages Pages--isHtml" data-id="3" data-slug="terms">
         <div class="Pages-page">
           <header class="Hero PageHero">
             <div class="container">
