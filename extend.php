@@ -19,7 +19,7 @@ return [
         ->js(__DIR__.'/js/dist/forum.js')
         ->css(__DIR__.'/resources/less/forum.less')
         ->route('/about-us', 'content-pages.about-us')
-        ->route('/contact-us', 'content-pages.contact-us')
+        //->route('/contact-us', 'content-pages.contact-us')
         ->route('/terms', 'content-pages.terms')
         ->route('/privacy-policy', 'content-pages.privacy-policy')
         ->route('/download', 'content-pages.download'),

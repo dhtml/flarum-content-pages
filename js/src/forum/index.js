@@ -8,7 +8,7 @@ import Download from "./components/Download";
 app.initializers.add('dhtml/flarum-content-pages', (app) => {
   //console.log('[dhtml/flarum-content-pages] Hello, forum!');
   app.routes.aboutUs = { path: '/about-us', component: AboutUs };
-  app.routes.contactUs = { path: '/contact-us', component: ContactUs };
+  //app.routes.contactUs = { path: '/contact-us', component: ContactUs };
   app.routes.terms = { path: '/terms', component: Terms };
   app.routes.privacyPolicy = { path: '/privacy-policy', component: PrivacyPolicy };
   app.routes.download = { path: '/download', component: Download };
