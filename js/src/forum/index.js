@@ -12,4 +12,23 @@ app.initializers.add('dhtml/flarum-content-pages', (app) => {
   app.routes.terms = { path: '/terms', component: Terms };
   app.routes.privacyPolicy = { path: '/privacy-policy', component: PrivacyPolicy };
   app.routes.download = { path: '/download', component: Download };
+
+
+  const multiplier = 1.75
+
+  function loadMoreIfNeeded() {
+    const distanceToBottom = -(
+      (document.body.scrollHeight || document.documentElement.scrollHeight) -
+      (document.body.scrollTop ||
+        document.documentElement.scrollTop +
+        document.documentElement.clientHeight)
+    );
+
+    if (distanceToBottom > document.documentElement.clientHeight * multiplier) return;
+
+    $(".DiscussionList-loadMore button").click();
+  }
+
+  document.addEventListener("scroll", loadMoreIfNeeded, { passive: true });
+
 });
