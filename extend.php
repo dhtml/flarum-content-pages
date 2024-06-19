@@ -18,11 +18,13 @@ return [
     (new Extend\Frontend('forum'))
         ->js(__DIR__.'/js/dist/forum.js')
          ->css(__DIR__.'/resources/less/forum.less')
-        ->route('/about-us', 'content-pages.about-us')
-        //->route('/contact-us', 'content-pages.contact-us')
-        ->route('/terms', 'content-pages.terms')
-        ->route('/privacy-policy', 'content-pages.privacy-policy')
-        ->route('/download', 'content-pages.download'),
+        ->route('/about-us', 'about-us')
+        //->route('/contact-us', 'contact-us')
+        ->route('/terms', 'our-terms')
+        ->route('/privacy-policy', 'privacy-policy')
+        ->route('/download', 'our-download'),
+
+    new Extend\Locales(__DIR__.'/locale'),
 
     /*
     (new Extend\Frontend('admin'))
@@ -31,7 +33,6 @@ return [
     */
 
     /*
-    new Extend\Locales(__DIR__.'/locale'),
 
     (new Extend\View())
         ->namespace('dhtml-content-pages', __DIR__.'/resources/views'),

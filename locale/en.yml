@@ -1,7 +1,13 @@
-dhtml-content-pages:
+flarum-content-pages:
   # For more details on the format
   # Checkout https://docs.flarum.org/extend/i18n/#appendix-a-standard-key-format
   admin:
     my_cool_key: My Cool Key
 
   forum:
+    about-us: About Us
+    guidelines: Guidelines
+    privacy-policy: Privacy Policy
+    terms-of-use: Term of Use
+    contact-us: Contact Us
+    download-app: Download App
