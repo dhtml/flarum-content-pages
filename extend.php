@@ -19,8 +19,9 @@ return [
         ->js(__DIR__.'/js/dist/forum.js')
          ->css(__DIR__.'/resources/less/forum.less')
         ->route('/about-us', 'about-us')
-        //->route('/contact-us', 'contact-us')
+        ->route('/contact-us', 'contact-us')
         ->route('/terms', 'our-terms')
+        ->route('/guidelines', 'guidelines')
         ->route('/privacy-policy', 'privacy-policy')
         ->route('/download', 'our-download'),
 
