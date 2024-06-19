@@ -21,7 +21,7 @@ export default function () {
 
     items.add(
       'dhtml-sidebar-guideline',
-      <LinkButton icon="fas fa-book" href={'/d/102-africoders-community-guidelines'}>
+      <LinkButton icon="fas fa-book" href={'/guidelines'}>
         {app.translator.trans('flarum-content-pages.forum.guidelines')}
       </LinkButton>,
       -14

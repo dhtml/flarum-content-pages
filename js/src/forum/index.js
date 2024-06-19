@@ -5,6 +5,7 @@ import Terms from "./components/Terms";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import Download from "./components/Download";
 import addSideBar from "./addSideBar";
+import Guidelines from "./components/Guidelines";
 
 app.initializers.add('dhtml/flarum-content-pages', (app) => {
 
@@ -13,6 +14,7 @@ app.initializers.add('dhtml/flarum-content-pages', (app) => {
   app.routes.aboutUs = { path: '/about-us', component: AboutUs };
   //app.routes.contactUs = { path: '/contact-us', component: ContactUs };
   app.routes.terms = { path: '/terms', component: Terms };
+  app.routes.guidelines = { path: '/guidelines', component: Guidelines };
   app.routes.privacyPolicy = { path: '/privacy-policy', component: PrivacyPolicy };
   app.routes.download = { path: '/download', component: Download };
 
