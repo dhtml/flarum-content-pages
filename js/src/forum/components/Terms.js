@@ -1757,7 +1757,6 @@ export default class Terms extends Component {
           </div>
         </div>
       </div>
-  </div>
   )
     ;
   }

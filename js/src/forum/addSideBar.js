@@ -10,7 +10,6 @@ export default function () {
   // to the index page's sidebar.
   extend(IndexPage.prototype, 'navItems', function (items) {
 
-    items.add('separator', <Separator />, -14);
 
     items.add(
       'dhtml-sidebar-about',
@@ -62,6 +61,18 @@ export default function () {
       </LinkButton>,
       -14
     );
+
+    const CustomFooter = () => {
+      const currentYear = new Date().getFullYear();
+
+      return (
+        <span className="CustomSidebarFooter">
+      © Africoders {currentYear}
+    </span>
+      );
+    }
+
+    items.add('custom-sidebar', CustomFooter(), -14);
 
   });
 }
