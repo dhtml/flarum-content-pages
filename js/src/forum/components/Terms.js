@@ -43,7 +43,7 @@ export default class Terms extends Component {
             </div>
           </div>
         </header>
-        <div class="Pages-container container">
+        <div class="Pages-containersss">
           <div class="Post-body">
             <div align="center" style="text-align: left; line-height: 1;">
               <div align="center" class="MsoNormal" style="text-align: left; line-height: 1;"></div>
