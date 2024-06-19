@@ -1,4 +1,9 @@
 import Component from 'flarum/common/Component';
+import Page from 'flarum/common/components/Page';
+import ItemList from 'flarum/common/utils/ItemList';
+import IndexPage from 'flarum/forum/components/IndexPage';
+import listItems from 'flarum/common/helpers/listItems';
+
 
 export default class ContactUs extends Component {
   oninit(vnode) {
