@@ -1,6 +1,10 @@
 import Component from 'flarum/common/Component';
+import Page from 'flarum/common/components/Page';
+import ItemList from 'flarum/common/utils/ItemList';
+import IndexPage from 'flarum/forum/components/IndexPage';
+import listItems from 'flarum/common/helpers/listItems';
 
-export default class AboutUs extends Component {
+export default class AboutUs extends Page {
   oninit(vnode) {
     super.oninit(vnode);
 
@@ -8,17 +12,38 @@ export default class AboutUs extends Component {
   }
 
   view() {
+    return m(".IndexPage", [
+      IndexPage.prototype.hero(),
+      m(
+        ".container",
+        m(".sideNavContainer", [
+          m(
+            "nav.IndexPage-nav.sideNav",
+            m("ul", listItems(IndexPage.prototype.sidebarItems().toArray()))
+          ),
+          m(
+            ".IndexPage-results.sideNavOffset",
+            m("div.ContentPages", this.pageContent()),
+          ),
+        ])
+      ),
+    ]);
+  }
+
+
+  pageContent() {
+
     return (
-      <div class="ContentPages Pages Pages--isHtml" data-id="1" data-slug="about-us">
         <div class="Pages-page">
           <header class="Hero PageHero">
-            <div class="container">
-              <ul class="PageHero-items">
-                <li class="item-title"><h1 class="PageHero-title"><a href="javascript://">About Us</a></h1></li>
-              </ul>
+            <div class="iconcontainer">
+              <div class="fontico"><i class="fas fa-info-circle"></i></div>
+              <div class="icocont">
+                <div class="titolo1">About Us</div>
+              </div>
             </div>
           </header>
-          <div class="Pages-container container">
+          <div class="Pages-container">
             <div class="Post-body"><p>Africoders is a pan-African forum designed to connect coders across the continent.
               We provide a platform for African software developers, programmers, and tech enthusiasts to share
               knowledge, collaborate on projects,
@@ -58,7 +83,8 @@ export default class AboutUs extends Component {
               <p>Together, we can build a brighter future for tech in Africa!</p></div>
           </div>
         </div>
-      </div>
     );
   }
+
+
 }

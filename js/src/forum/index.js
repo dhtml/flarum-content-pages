@@ -4,8 +4,11 @@ import ContactUs from "./components/ContactUs";
 import Terms from "./components/Terms";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import Download from "./components/Download";
+import addSideBar from "./addSideBar";
 
 app.initializers.add('dhtml/flarum-content-pages', (app) => {
+
+
   //console.log('[dhtml/flarum-content-pages] Hello, forum!');
   app.routes.aboutUs = { path: '/about-us', component: AboutUs };
   //app.routes.contactUs = { path: '/contact-us', component: ContactUs };
@@ -30,5 +33,7 @@ app.initializers.add('dhtml/flarum-content-pages', (app) => {
   }
 
   document.addEventListener("scroll", loadMoreIfNeeded, { passive: true });
+
+  addSideBar();
 
 });
