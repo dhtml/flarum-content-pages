@@ -5,37 +5,39 @@ import Terms from "./components/Terms";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import Download from "./components/Download";
 import addSideBar from "./addSideBar";
+import addInfinityScroller from "./addInfinityScroller";
 import Guidelines from "./components/Guidelines";
+import PageLoader from "./components/PageLoader";
 
 app.initializers.add('dhtml/flarum-content-pages', (app) => {
 
 
   //console.log('[dhtml/flarum-content-pages] Hello, forum!');
+  /*
   app.routes.aboutUs = { path: '/about-us', component: AboutUs };
   app.routes.contactUs = { path: '/contact-us', component: ContactUs };
   app.routes.terms = { path: '/terms', component: Terms };
   app.routes.guidelines = { path: '/guidelines', component: Guidelines };
   app.routes.privacyPolicy = { path: '/privacy-policy', component: PrivacyPolicy };
   app.routes.download = { path: '/download', component: Download };
+  */
 
+  const slugs = [
+    'contact-us',
+    'about-us',
+    'privacy-policy',
+    'terms',
+    'guidelines',
+    'download'
+  ];
 
-  const multiplier = 1.75
+  slugs.forEach(slug => {
+    app.routes[slug] = { path: `/${slug}`, component: PageLoader, resolveComponent: () => PageLoader.extend({ slug }) };
+  });
 
-  function loadMoreIfNeeded() {
-    const distanceToBottom = -(
-      (document.body.scrollHeight || document.documentElement.scrollHeight) -
-      (document.body.scrollTop ||
-        document.documentElement.scrollTop +
-        document.documentElement.clientHeight)
-    );
-
-    if (distanceToBottom > document.documentElement.clientHeight * multiplier) return;
-
-    $(".DiscussionList-loadMore button").click();
-  }
-
-  document.addEventListener("scroll", loadMoreIfNeeded, { passive: true });
 
   addSideBar();
+
+  addInfinityScroller();
 
 });

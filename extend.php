@@ -11,7 +11,9 @@
 
 namespace Dhtml\FlarumContentPages;
 
+use Dhtml\FlarumContentPages\Api\Controllers\PagesApiController;
 use Dhtml\FlarumContentPages\Controllers\HelloWorld;
+use Dhtml\FlarumLanguageTranslator\Api\Controllers\TranslateApiController;
 use Flarum\Extend;
 
 return [
@@ -26,6 +28,9 @@ return [
         ->route('/download', 'our-download'),
 
     new Extend\Locales(__DIR__.'/locale'),
+
+    (new Extend\Routes('api'))
+        ->get('/cpage/{slug}', 'cpages.load', PagesApiController::class),
 
     /*
     (new Extend\Frontend('admin'))

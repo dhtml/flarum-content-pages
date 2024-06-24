@@ -10,10 +10,27 @@ export default function () {
   // to the index page's sidebar.
   extend(IndexPage.prototype, 'navItems', function (items) {
 
+    const priority = 0;
+
+    items.add(
+      'customLink-1',
+      <LinkButton external={false} href={'/tags'} rel="noopener noreferrer" icon='fas fa-th-large'>
+        {app.translator.trans('flarum-content-pages.forum.tags-cloud')}
+      </LinkButton>,
+      priority
+    );
+
+    items.add(
+      'customLink-2',
+      <LinkButton external={true} target='_blank' href={'https://d.afr.ng'} rel="noopener noreferrer" icon='fab fa-discord'>
+        {app.translator.trans('flarum-content-pages.forum.discord-chat')}
+      </LinkButton>,
+      priority
+    );
 
     items.add(
       'dhtml-sidebar-about',
-      <LinkButton icon="fas fa-info-circle" href={'/about-us'}>
+      <LinkButton external={false} icon="fas fa-info-circle" href={'/about-us'}>
         {app.translator.trans('flarum-content-pages.forum.about-us')}
       </LinkButton>,
       -14
@@ -21,7 +38,7 @@ export default function () {
 
     items.add(
       'dhtml-sidebar-guideline',
-      <LinkButton icon="fas fa-book" href={'/guidelines'}>
+      <LinkButton external={false} icon="fas fa-book" href={'/guidelines'}>
         {app.translator.trans('flarum-content-pages.forum.guidelines')}
       </LinkButton>,
       -14
@@ -29,7 +46,7 @@ export default function () {
 
     items.add(
       'dhtml-sidebar-privacy',
-      <LinkButton icon="fas fa-user-secret" href={'/privacy-policy'}>
+      <LinkButton external={false} icon="fas fa-user-secret" href={'/privacy-policy'}>
         {app.translator.trans('flarum-content-pages.forum.privacy-policy')}
       </LinkButton>,
       -14
@@ -38,7 +55,7 @@ export default function () {
 
     items.add(
       'dhtml-sidebar-terms',
-      <LinkButton icon="fas fa-file-contract" href={'/terms'}>
+      <LinkButton external={false} icon="fas fa-file-contract" href={'/terms'}>
         {app.translator.trans('flarum-content-pages.forum.terms-of-use')}
       </LinkButton>,
       -14
@@ -56,7 +73,7 @@ export default function () {
 
     items.add(
       'dhtml-sidebar-download',
-      <LinkButton icon="fas fa-download" href={'/download'}>
+      <LinkButton external={false} icon="fas fa-download" href={'/download'}>
         {app.translator.trans('flarum-content-pages.forum.download-app')}
       </LinkButton>,
       -14
