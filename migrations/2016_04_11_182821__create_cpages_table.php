@@ -27,6 +27,6 @@ return [
         });
     },
     'down' => function (Builder $schema) {
-        $schema->dropIfExists('cpages');
+        //$schema->dropIfExists('cpages');
     },
 ];
