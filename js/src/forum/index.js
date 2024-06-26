@@ -1,13 +1,8 @@
 import app from 'flarum/forum/app';
-import AboutUs from './components/AboutUs';
-import ContactUs from "./components/ContactUs";
-import Terms from "./components/Terms";
-import PrivacyPolicy from "./components/PrivacyPolicy";
-import Download from "./components/Download";
 import addSideBar from "./addSideBar";
 import addInfinityScroller from "./addInfinityScroller";
-import Guidelines from "./components/Guidelines";
 import PageLoader from "./components/PageLoader";
+import addTopBar from "./addTopBar";
 
 app.initializers.add('dhtml/flarum-content-pages', (app) => {
 
@@ -36,6 +31,7 @@ app.initializers.add('dhtml/flarum-content-pages', (app) => {
   });
 
 
+  addTopBar();
   addSideBar();
 
   addInfinityScroller();

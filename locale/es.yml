@@ -1,0 +1,12 @@
+#Spanish
+flarum-content-pages:
+  forum:
+    home: Hogar
+    about-us: Acerca de nosotros
+    guidelines: Pautas
+    privacy-policy: Política de privacidad
+    terms-of-use: Términos de uso
+    contact-us: Contáctenos
+    download-app: Descargar aplicación
+    discord-chat: Chat de discordia
+    tags-cloud: Nube de etiquetas

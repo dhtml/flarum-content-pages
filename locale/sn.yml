@@ -1,12 +1,12 @@
-#English
+#Shona
 flarum-content-pages:
   forum:
-    home: Home
-    about-us: About Us
+    home: Kumba
+    about-us: Nezvedu
     guidelines: Guidelines
     privacy-policy: Privacy Policy
-    terms-of-use: Term of Use
-    contact-us: Contact Us
+    terms-of-use: Nguva Yekushandisa
+    contact-us: Taura nesu
     download-app: Download App
     discord-chat: Discord Chat
     tags-cloud: Tags Cloud

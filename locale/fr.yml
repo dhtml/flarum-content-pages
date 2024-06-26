@@ -1,0 +1,12 @@
+#French
+flarum-content-pages:
+  forum:
+    home: Maison
+    about-us: À propos de nous
+    guidelines: Des lignes directrices
+    privacy-policy: Politique de confidentialité
+    terms-of-use: Conditions d'utilisation
+    contact-us: Contactez-nous
+    download-app: Télécharger l'application
+    discord-chat: Discussion Discorde
+    tags-cloud: Nuage de balises
