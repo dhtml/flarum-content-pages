@@ -21,6 +21,14 @@ export default function () {
     );
 
     items.add(
+      'customLink-3',
+      <LinkButton external={false} href={'/leaderboard'} rel="noopener noreferrer" icon='fas fa-trophy'>
+        {app.translator.trans('flarum-content-pages.forum.leaderboard')}
+      </LinkButton>,
+      priority
+    );
+
+    items.add(
       'customLink-2',
       <LinkButton external={true} target='_blank' href={'https://d.afr.ng'} rel="noopener noreferrer" icon='fab fa-discord'>
         {app.translator.trans('flarum-content-pages.forum.discord-chat')}
