@@ -4,6 +4,9 @@
 
 A [Flarum](http://flarum.org) extension. Create custom flarum content pages
 
+git tag v0.0.0
+git push origin v0.0.0
+
 ## Installation
 
 Install with composer:
