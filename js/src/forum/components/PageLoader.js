@@ -1,14 +1,16 @@
-import Component from 'flarum/common/Component';
 import app from 'flarum/forum/app';
 import LoadingIndicator from 'flarum/common/components/LoadingIndicator';
 import IndexPage from 'flarum/forum/components/IndexPage';
 import listItems from 'flarum/common/helpers/listItems';
+import Page from 'flarum/common/components/Page';
 
-export default class PageLoader extends Component {
+export default class PageLoader extends Page {
   oninit(vnode) {
     super.oninit(vnode);
     this.slug = vnode.attrs.routeName;
     this.page = null;
+
+    this.loading = true;
 
     this.pageContent = null;
 
@@ -24,7 +26,7 @@ export default class PageLoader extends Component {
   show(page) {
     this.page = page;
 
-    app.history.push('page', page.title);
+    //app.history.push('page', page.title);
     app.setTitle(page.title);
 
     //set the content
@@ -43,32 +45,42 @@ export default class PageLoader extends Component {
   }
 
   renderPage() {
+    if(!this.loading) {
+      return LoadingIndicator.component({ className: 'LoadingIndicator--block' })
+    } else {
+     return (m("div.ContentPages",  m.trust(this.pageContent)));
+    }
+    /*
     return m(".IndexPage", [
       IndexPage.prototype.hero(),
       m(
         ".container",
-        m(".sideNavContainer", [
-          m(
-            "nav.IndexPage-nav.sideNav",
-            m("ul", listItems(IndexPage.prototype.sidebarItems().toArray()))
-          ),
-          m(
-            ".IndexPage-results.sideNavOffset",
-            m("div.ContentPages",  m.trust(this.pageContent)),
-          ),
-        ])
+        m(
+          ".IndexPage-results.sideNavOffset",
+          m("div.ContentPages",  m.trust(this.pageContent)),
+        ),
       ),
     ]);
+     */
   }
 
   view() {
+
     return (
-      <div class="PageLoader">
-        {this.pageContent ? (
-          this.renderPage()
-        ) : (
-          LoadingIndicator.component({ className: 'LoadingIndicator--block' })
-        )}
+      <div className="IndexPage">
+        {IndexPage.prototype.hero()}
+        <div className="container">
+          <div className="sideNavContainer">
+            <nav className="IndexPage-nav sideNav">
+              <ul>{listItems(IndexPage.prototype.sidebarItems().toArray())}</ul>
+            </nav>
+            <div className="IndexPage-results sideNavOffset">
+
+              {this.renderPage()}
+
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
