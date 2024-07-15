@@ -37,6 +37,12 @@ export default function () {
     );
 
     items.add(
+      'customSeparator-1',
+      <li className="Dropdown-separator"></li>,
+      priority
+    );
+
+    items.add(
       'dhtml-sidebar-about',
       <LinkButton external={false} icon="fas fa-info-circle" href={'/about-us'}>
         {app.translator.trans('flarum-content-pages.forum.about-us')}

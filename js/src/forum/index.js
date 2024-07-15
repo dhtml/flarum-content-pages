@@ -31,7 +31,7 @@ app.initializers.add('dhtml/flarum-content-pages', (app) => {
   });
 
 
-  addTopBar();
+  //addTopBar();
   addSideBar();
 
   addInfinityScroller();
