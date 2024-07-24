@@ -43,6 +43,61 @@ export default function () {
     );
 
     items.add(
+      'dhtml-sidebar-membership-1',
+      <LinkButton external={false} icon="fas fa-chalkboard-teacher" href={'/t/events'}>
+        {app.translator.trans('flarum-content-pages.forum.events')}
+      </LinkButton>,
+      -14
+    );
+
+    items.add(
+      'dhtml-sidebar-membership-2',
+      <LinkButton external={false} icon="fas fa-tools" href={'/t/workshops'}>
+        {app.translator.trans('flarum-content-pages.forum.workshops')}
+      </LinkButton>,
+      -14
+    );
+
+    items.add(
+      'dhtml-sidebar-membership-3',
+      <LinkButton external={false} icon="fas fa-flag-checkered" href={'/t/challenges'}>
+        {app.translator.trans('flarum-content-pages.forum.challenges')}
+      </LinkButton>,
+      -14
+    );
+
+    items.add(
+      'dhtml-sidebar-membership-5',
+      <LinkButton external={false} icon="fas fa-graduation-cap" href={'/t/live'}>
+        {app.translator.trans('flarum-content-pages.forum.live')}
+      </LinkButton>,
+      -14
+    );
+
+    items.add(
+      'dhtml-sidebar-membership-6',
+      <LinkButton external={false} icon="fas fa-briefcase" href={'/t/jobs'}>
+        {app.translator.trans('flarum-content-pages.forum.jobs')}
+      </LinkButton>,
+      -14
+    );
+
+    items.add(
+      'dhtml-sidebar-membership-7',
+      <LinkButton external={false} icon="fas fa-tv" href={'/t/showcase'}>
+        {app.translator.trans('flarum-content-pages.forum.showcase')}
+      </LinkButton>,
+      -14
+    );
+
+
+    items.add(
+      'customSeparator-3',
+      <li className="Dropdown-separator"></li>,
+      -14
+    );
+
+    items.add(
       'dhtml-sidebar-about',
       <LinkButton external={false} icon="fas fa-info-circle" href={'/about-us'}>
         {app.translator.trans('flarum-content-pages.forum.about-us')}
