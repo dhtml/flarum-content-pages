@@ -10,6 +10,16 @@ export default function () {
   // to the index page's sidebar.
   extend(IndexPage.prototype, 'navItems', function (items) {
 
+    const localizedData = app.forum.attribute('localizedData');
+
+    const sidebarLinkLocales = app.forum.attribute('sidebarLinkLocales');
+    console.log(sidebarLinkLocales); // Should log: ["live", "social", "events"]
+
+    const cloud = app.translator.trans('flarum-content-pages.forum.members');
+    const live = app.translator.trans('flarum-content-pages.forum.live');
+
+    console.log({cloud,live});
+
     const priority = 0;
 
     items.add(
