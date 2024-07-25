@@ -92,6 +92,14 @@ export default function () {
 
     items.add(
       'dhtml-sidebar-membership-8',
+      <LinkButton external={false} icon="fas fa-question-circle" href={'/t/questions-and-answers'}>
+        {app.translator.trans('flarum-content-pages.forum.q-a')}
+      </LinkButton>,
+      -14
+    );
+
+    items.add(
+      'dhtml-sidebar-membership-9',
       <LinkButton external={false} icon="fas fa-users" href={'/t/community'}>
         {app.translator.trans('flarum-content-pages.forum.community')}
       </LinkButton>,
