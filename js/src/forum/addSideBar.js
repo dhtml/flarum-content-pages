@@ -39,7 +39,7 @@ export default function () {
     items.add(
       'customSeparator-1',
       <li className="Dropdown-separator"></li>,
-      priority
+      -14
     );
 
     items.add(
@@ -86,6 +86,14 @@ export default function () {
       'dhtml-sidebar-membership-7',
       <LinkButton external={false} icon="fas fa-tv" href={'/t/showcase'}>
         {app.translator.trans('flarum-content-pages.forum.showcase')}
+      </LinkButton>,
+      -14
+    );
+
+    items.add(
+      'dhtml-sidebar-membership-8',
+      <LinkButton external={false} icon="fas fa-users" href={'/t/community'}>
+        {app.translator.trans('flarum-content-pages.forum.community')}
       </LinkButton>,
       -14
     );
