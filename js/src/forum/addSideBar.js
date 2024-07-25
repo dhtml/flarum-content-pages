@@ -101,7 +101,7 @@ export default function () {
     );
 
     items.add(
-      'dhtml-sidebar-membership-9',
+      'dhtml-sidebar-membership-90',
       <LinkButton external={false} icon="fas fa-users" href={'/t/community'}>
         {app.translator.trans('flarum-content-pages.forum.community')}
       </LinkButton>,
