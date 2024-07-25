@@ -42,8 +42,25 @@ export default function () {
       -14
     );
 
+
     items.add(
-      'dhtml-sidebar-membership-1',
+      'dhtml-sidebar-membership-1a',
+      <LinkButton external={false} icon="fas fa-graduation-cap" href={'/t/live'}>
+        {app.translator.trans('flarum-content-pages.forum.live')}
+      </LinkButton>,
+      -14
+    );
+
+    items.add(
+      'dhtml-sidebar-membership-1b',
+      <LinkButton external={false} icon="fas fa-briefcase" href={'/t/jobs'}>
+        {app.translator.trans('flarum-content-pages.forum.jobs')}
+      </LinkButton>,
+      -14
+    );
+
+    items.add(
+      'dhtml-sidebar-membership-1c',
       <LinkButton external={false} icon="fas fa-chalkboard-teacher" href={'/t/events'}>
         {app.translator.trans('flarum-content-pages.forum.events')}
       </LinkButton>,
@@ -66,21 +83,6 @@ export default function () {
       -14
     );
 
-    items.add(
-      'dhtml-sidebar-membership-5',
-      <LinkButton external={false} icon="fas fa-graduation-cap" href={'/t/live'}>
-        {app.translator.trans('flarum-content-pages.forum.live')}
-      </LinkButton>,
-      -14
-    );
-
-    items.add(
-      'dhtml-sidebar-membership-6',
-      <LinkButton external={false} icon="fas fa-briefcase" href={'/t/jobs'}>
-        {app.translator.trans('flarum-content-pages.forum.jobs')}
-      </LinkButton>,
-      -14
-    );
 
     items.add(
       'dhtml-sidebar-membership-7',
