@@ -11,9 +11,8 @@ export default function () {
   // to the index page's sidebar.
   extend(IndexPage.prototype, 'navItems', function (items) {
 
-    const localizedData = JSON.parse(app.forum.attribute('dhtml-cpages-data'));
-
-    console.log({localizedData});
+    //const localizedData = JSON.parse(app.forum.attribute('dhtml-cpages-data'));
+    //console.log({localizedData});
 
     const priority = 0;
 
