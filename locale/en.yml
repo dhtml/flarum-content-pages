@@ -1,14 +1,43 @@
-#English
 flarum-content-pages:
   forum:
     home: Home
-    about-us: About Us
+    about-us: 'About Us'
     guidelines: Guidelines
-    privacy-policy: Privacy Policy
-    terms-of-use: Term of Use
-    contact-us: Contact Us
-    download-app: Download App
-    discord-chat: Discord Chat
-    tags-cloud: Tags Cloud
+    privacy-policy: 'Privacy Policy'
+    terms-of-use: 'Term of Use'
+    contact-us: 'Contact Us'
+    download-app: 'Download App'
+    discord-chat: 'Discord Chat'
+    tags-cloud: 'Tags Cloud'
     languages: Languages
     leaderboard: Leaderboard
+    live: Live
+    live-coding: 'Live Coding'
+    challenges: Challenges
+    dev-challenges: 'Dev Challenges'
+    jobs: Jobs
+    community: Community
+    dev-jobs: 'Dev Jobs'
+    job-posting: 'Job Posting'
+    job-postings: 'Job Postings'
+    workshops: Workshops
+    dev-workshops: 'Dev Workshops'
+    events: Events
+    conferences: Conferences
+    event-conferences: 'Events / Conferences'
+    showcase: Showcase
+    tags: Tags
+    more: More
+    general-discussion: 'General Discussion'
+    technology-articles: 'Technology Articles'
+    coding-challenges: 'Coding Challenges'
+    q-a: 'Q/A Section'
+    artificial-intelligence: 'Artificial Intelligence'
+    computer-science: 'Computer Science'
+    programming-languages: 'Programming Languages'
+    development-tools: 'Development Tools'
+    software-development: 'Software Development'
+    frontend-development: 'Frontend Development'
+    backend-development: 'Backend Development'
+    software-engineering: 'Software Engineering'
+    cybersecurity: Cybersecurity
