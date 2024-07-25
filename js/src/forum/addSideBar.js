@@ -6,19 +6,14 @@ import LinkButton from 'flarum/common/components/LinkButton';
 import app from 'flarum/forum/app';
 
 export default function () {
+
   // Add a link to the tags page, as well as a list of all the tags,
   // to the index page's sidebar.
   extend(IndexPage.prototype, 'navItems', function (items) {
 
-    const localizedData = app.forum.attribute('localizedData');
+    const localizedData = JSON.parse(app.forum.attribute('dhtml-cpages-data'));
 
-    const sidebarLinkLocales = app.forum.attribute('sidebarLinkLocales');
-    console.log(sidebarLinkLocales); // Should log: ["live", "social", "events"]
-
-    const cloud = app.translator.trans('flarum-content-pages.forum.members');
-    const live = app.translator.trans('flarum-content-pages.forum.live');
-
-    console.log({cloud,live});
+    console.log({localizedData});
 
     const priority = 0;
 

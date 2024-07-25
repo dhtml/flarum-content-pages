@@ -36,6 +36,13 @@ return [
     (new Extend\Routes('api'))
         ->get('/cpages-data', 'cpages.data', DataApiController::class),
 
+
+    (new Extend\Settings())
+        ->serializeToForum('dhtml-cpages-data', "dhtml-cpages-data",null,null),
+
+    (new Extend\ServiceProvider())
+        ->register(Providers\LocaleServiceProvider::class),
+
     /*
     (new Extend\Frontend('admin'))
         ->js(__DIR__.'/js/dist/admin.js')
