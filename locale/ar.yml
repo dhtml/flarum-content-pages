@@ -1,0 +1,43 @@
+flarum-content-pages:
+  forum:
+    home: وطن
+    about-us: 'من نحن'
+    guidelines: 'المبادئ التوجيهيه'
+    privacy-policy: 'سياسة الخصوصية'
+    terms-of-use: 'شروط الاستخدام'
+    contact-us: 'اتصل بنا'
+    download-app: 'تحميل التطبيق'
+    discord-chat: 'دردشة الخلاف'
+    tags-cloud: 'الشعارات سحابة'
+    languages: اللغات
+    leaderboard: المتصدرين
+    live: الحياة
+    live-coding: 'الزينة الحية'
+    challenges: التحديات
+    dev-challenges: 'دال - التحديات'
+    jobs: الوظائف
+    community: المجتمع
+    dev-jobs: 'ديف جوب'
+    job-posting: الوظائف
+    job-postings: الوظائف
+    workshops: 'حلقات العمل'
+    dev-workshops: 'حلقات عمل ديف'
+    events: الأحداث
+    conferences: المؤتمرات
+    event-conferences: المناسبات/المؤتمرات
+    showcase: عرض
+    tags: العلامات
+    more: أكثر
+    general-discussion: 'المناقشة العامة'
+    technology-articles: 'مواد التكنولوجيا'
+    coding-challenges: التحديات
+    q-a: 'Q/A Section'
+    artificial-intelligence: 'الاستخبارات الفنية'
+    computer-science: 'علوم الحاسوب'
+    programming-languages: 'لغات البرمجة'
+    development-tools: 'أدوات التنمية'
+    software-development: 'تطوير البرامجيات'
+    frontend-development: 'جبهة التنمية'
+    backend-development: 'تنمية الدعم'
+    software-engineering: 'الهندسة البرمجية'
+    cybersecurity: 'أمن الفضاء الإلكتروني'
