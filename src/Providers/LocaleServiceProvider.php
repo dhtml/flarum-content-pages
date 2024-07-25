@@ -21,7 +21,7 @@ class LocaleServiceProvider extends AbstractServiceProvider
      */
     public function register()
     {
-        //$language = getDetectedLocale();
+        $language = getDetectedLocale();
         $translator = resolve('translator');
         //$translator->setLocale($language);
 
@@ -35,7 +35,7 @@ class LocaleServiceProvider extends AbstractServiceProvider
             $data[$title] = $translator->trans('flarum-content-pages.forum.'.$title);
         }
 
-       // $data['language'] = $language;
+        $data['language'] = $language;
 
         $this->settings->set('dhtml-cpages-data', json_encode($data));
     }
